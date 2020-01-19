@@ -1,0 +1,20 @@
+<html>
+  <script>
+    function handleClick(event) {
+      alert('From here event won\'t bubble forward');
+        event.stopPropagation(); // to stop propagtaion of event.
+    }
+  </script>
+        <form style="background-color: red; color: white" onclick="alert('form')">FORM
+            <div style="background-color: aqua ; color:black" onclick="handleClick(event)"">DIV
+                <p style= "background-color: chocolate ; color: black" onclick="alert('p')">P</p>  
+            </div>
+    </form>
+</html>
+
+<!--Note
+To the level from where we stop the propagation of event /bubbling, it won't trigger the same event of ancestors/parents.
+When you will click on "p", click event of "p" will get executed along with that it will proceed further and trigger "click"
+event of "div". But since on click handler of "div" we are using method "handleClick" where we are stopping the propgation 
+of event. So the bubbling of event will stop and "click" event of "form" won't get trigger further.
+-->

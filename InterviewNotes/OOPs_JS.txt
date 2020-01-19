@@ -1,0 +1,79 @@
+Object Oriented JavaScript Interview QUESTIONS :-
+
+1)Object :-
+An Object is a unique entity and a instance of class which contains
+property and methods. Properties are nothing but the characteristics of class
+where as method is a property of object whose value is a function.
+
+Characteristic of an object can be type,scope.
+
+*Various methods of Objects :-
+a) Object.create() :- It is used to create a new object using an existing object as 
+	a prototype.
+	
+	Eg:- const temp = {
+			isStydying : false,
+			tempFunc : function() {
+				.....
+			}
+		};
+		
+		const temp2 = object.create(temp);
+		temp2.isStydying = true;
+		temp2.tempFunc();
+		
+b) Object.entries() :- Object.entries() method returns an array whose element is the
+key-value pairs of the object which we have passed as an argument in Object.entries method.
+
+const object1 = { foo: 'bar', baz: 42 };
+console.log(Object.entries(object1));
+// output: Array [["foo",'bar'],["baz", 42]]
+
+c)Object.assign() :- It is used to copy all the properties from source object to the target object.
+
+2)Class :-
+Classes are blueprints of an object. It's more of a template whose instances are Objects.
+
+*JS classes were introduced in ES6 which are the syntatical sugar over JS's prototype
+based inheritance. Class is a object in javascript.
+
+*Unlike functional declarations class declaration are not hoisted.
+
+*We can make class by two methods :- 
+a)Class declaration :- when we define a class by using "class" keyword.
+
+class temp {
+	constructor(name,place) {
+		this.name = name;
+		this.place = place;
+	}
+}
+
+b) class expressions :- while defining a class using expressions class_name is optional.
+Eg:- const demoClass = class {
+	constructor(name,place) {
+		this.name = name;
+		this.place = place;
+	}
+} 	
+
+3)Encapsulation :-
+The process of Wrapping property and function within a single unit is called Encapsulation.
+
+
+4)Inheritance :-
+It is a concept by which some property and methods of an Object is being used by another object.
+Unlike in another OOP languages where class inherits another class, in JS object inherits another 
+object.
+
+5)Polymorphism :-
+Polymorphism refers to many forms, In OOPs it refers to functions and objects which are compatible with different data types;
+For eg :- 
+'+' operators is used both for adding and concatinating when used with numbers and strings respectively.
+
+
+
+
+
+
+

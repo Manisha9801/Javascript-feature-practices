@@ -1,0 +1,16 @@
+<html>
+    <script>
+        document.getElementById('form').onclick(function(event) {
+            alert('form was clicked first time');
+        });
+    </script>
+    <form #form style="background-color: red; color: black;">
+        form
+        <div #div style="background-color: pink; color: black;">
+            div
+            <p #p style="background-color: blue; color: black;">
+                Para
+            </p>
+        </div>
+    </form>
+</html>

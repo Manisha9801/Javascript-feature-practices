@@ -1,0 +1,4 @@
+Data-types in js:-
+
+1)Primitive data types :-
+number, boolean, undefined, string, Null, Symbol

@@ -1,0 +1,8 @@
+Lexical Scoping :-  Lexical scoping is a technique by which the location of a 
+variable is used to determine the its availability.
+ or 
+ A lexical scope in JS means that a variable defined outside a function can be
+ accessible inside another function defined after the variable declaration without
+ passing them.
+ 
+ 

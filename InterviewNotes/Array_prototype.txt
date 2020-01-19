@@ -1,0 +1,53 @@
+Array.copyWithin() :- It does shallow copy of array to another location in the 
+					  same array. And returns the same array.
+
+Array.fill() :- It fills the element of array with a value passed in , we can specify 
+				the starting and ending index of the array from where we want to copy the value.
+
+Array.splice() :- It modifies the same array either by removing or replacing.
+
+Array.slice() :- It returns a portion of an array which is mainly a shallow copy, it doesn't
+                 modifies the original array.
+				 
+Array.reduce() :- The reduce method executes a reducer method on each element of an array, resulting
+				  in a single output, we can even specify the initial value of calculation.
+				  
+Array.filter() :- It returns a new array which is merely the element of the array on which filter is applied,
+			      which fulfills the given condition.
+				  
+Array.map() :- It return a new array which is a result of calling a provided function on every element of calling array.
+
+Array.push() :- It appends element in the end of array.
+
+Array.pop() :- It removes the last element of the array.
+
+Array.findAtIndex() :-  
+
+Array.join() :- It creates a new string which is formed by concatinating all the elements  of array and are separated by comma or 
+				any special character which we specify.
+				
+Array.shift() :- It removes the first element of an array.
+
+Array.unshift() :- It add one or more elements at the begining of the array.
+
+Array.every() :- It returns a boolean value. If all the elements of array passes the test condition specified by the provided function
+				 then it returns true otherwise it returns false.
+				
+				Eg :-  const checkFunc = (data) => {
+					return data>20;
+				}
+				const arr = [2,100,34,90];
+				console.log(arr.every(checkFunc)); //false
+				
+				const fun = data =>  data<20;
+				
+				const arr1 = [2,4,5,1,8];
+				console.log(arr1.every(fun));  //true
+				
+				
+
+				
+				
+				
+
+				
