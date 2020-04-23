@@ -1,5 +1,4 @@
 //weaksets are used in simillar way as sets but we there are following difference:-
-// we pass objects in weaksets we cannot pass primitive data type in sets.
 //Infact we can pass array in weaksets which are also array of objects.
 
 const myWeakSets = new WeakSet([{a:1},{b:2}]);
